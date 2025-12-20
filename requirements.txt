@@ -1,0 +1,7 @@
+Sistema de Inventario
+
+
+Requisitos:
+
+1-Sistema de inventario estilo CRUD 
+
