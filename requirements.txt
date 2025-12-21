@@ -3,5 +3,5 @@ Sistema de Inventario
 
 Requisitos:
 
-1-Sistema de inventario estilo CRUD 
-
+-Sistema de inventario estilo CRUD
+-Se debe poder conocer la ubicacion de los almacenes 

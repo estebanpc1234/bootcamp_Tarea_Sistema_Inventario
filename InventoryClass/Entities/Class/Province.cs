@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InventoryClass.Entities.AbstracClass;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace InventoryClass.Entities.Class
 {
-    public class Province
+    public class Province:EntityBase
     {
-        public int Id { get; set; }
-        public string Name { get; set; } 
         public Country Country { get; set; } 
         public List<Canton> Cantons { get; set; } 
     }
