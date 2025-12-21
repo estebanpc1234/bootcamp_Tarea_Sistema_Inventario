@@ -1,9 +1,9 @@
-﻿namespace InventoryClass.Entities.Class
+﻿using InventoryClass.Entities.AbstracClass;
+
+namespace InventoryClass.Entities.Class
 {
-    public class SubCategory
+    public class SubCategory:EntityBase
     {
-        public int Id { get; set; }
-        public string Name { get; set; } 
         public string Description { get; set; } 
         public Category Category { get; set; } 
     }
