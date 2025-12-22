@@ -1,10 +1,8 @@
 Sistema de Inventario
 
-
-Requisitos:
+Para este sistema de inventario necesitaremos los siguientes requisitos
 
 -Sistema de inventario estilo CRUD
 -Se debe poder consultar el Id, nombre, actividad, y fecha de creación de las clases. Así como cambiar, eliminar y añadir.
 -Se debe poder conocer la ubicación de los almacenes 
 -Se deben poder generar ordenes al suplier, con una lista de productos
-- 
