@@ -1,0 +1,150 @@
+<mxfile host="Electron" modified="2025-12-20T23:26:00Z" agent="5.0 (Windows)" version="29.0.3">
+  <diagram id="object-diagram" name="Objects">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- countryCR : Country -->
+        <mxCell id="countryCR" value="countryCR : Country&#10;id = 1&#10;name = &quot;Costa Rica&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- provinceSJ : Province -->
+        <mxCell id="provinceSJ" value="provinceSJ : Province&#10;id = 10&#10;name = &quot;San José&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- cantonMO : Canton -->
+        <mxCell id="cantonMO" value="cantonMO : Canton&#10;id = 100&#10;name = &quot;Montes de Oca&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="190" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- locationSP : Location -->
+        <mxCell id="locationSP" value="locationSP : Location&#10;id = 1000&#10;name = &quot;San Pedro&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="160" width="190" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- officeHQ : Office -->
+        <mxCell id="officeHQ" value="officeHQ : Office&#10;id = 1500&#10;name = &quot;Head Office&quot;&#10;direction = &quot;Avenida Central, San Pedro&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="210" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- warehouseTypeDC : WarehouseType -->
+        <mxCell id="warehouseTypeDC" value="warehouseTypeDC : WarehouseType&#10;id = 1&#10;name = &quot;Distribution Center&quot;&#10;description = &quot;Main distribution warehouse&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="240" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- whCentral : Warehouse -->
+        <mxCell id="whCentral" value="whCentral : Warehouse&#10;id = 2000&#10;name = &quot;Central Warehouse&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="210" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- brandAsus : Brand -->
+        <mxCell id="brandAsus" value="brandAsus : Brand&#10;id = 1&#10;name = &quot;Asus&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="40" width="150" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- catElectronics : Category -->
+        <mxCell id="catElectronics" value="catElectronics : Category&#10;id = 1&#10;name = &quot;Electronics&quot;&#10;description = &quot;Electronic devices&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="140" width="210" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- subCatLaptops : SubCategory -->
+        <mxCell id="subCatLaptops" value="subCatLaptops : SubCategory&#10;id = 10&#10;name = &quot;Laptops&quot;&#10;description = &quot;Portable computers&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="270" width="210" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- productLaptop : Product -->
+        <mxCell id="productLaptop" value="productLaptop : Product&#10;id = 3000&#10;name = &quot;Gaming Laptop&quot;&#10;price = 1500.00" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="210" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- supplierTech : Supplier -->
+        <mxCell id="supplierTech" value="supplierTech : Supplier&#10;id = 500&#10;name = &quot;Tech Supplier CR&quot;&#10;email = &quot;info@techsupplier.cr&quot;&#10;cellphone = &quot;8888-8888&quot;" style="swimlane;horizontal=0;childLayout=stackLayout;startSize=20;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="430" width="230" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- Relaciones (edges) -->
+        <!-- provinceSJ.country -> countryCR -->
+        <mxCell id="e1" edge="1" parent="1" source="provinceSJ" target="countryCR"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- cantonMO.province -> provinceSJ -->
+        <mxCell id="e2" edge="1" parent="1" source="cantonMO" target="provinceSJ"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- locationSP.canton -> cantonMO -->
+        <mxCell id="e3" edge="1" parent="1" source="locationSP" target="cantonMO"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- officeHQ.location -> locationSP -->
+        <mxCell id="e4" edge="1" parent="1" source="officeHQ" target="locationSP"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- whCentral.location -> locationSP -->
+        <mxCell id="e5" edge="1" parent="1" source="whCentral" target="locationSP"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- whCentral.warehouseType -> warehouseTypeDC -->
+        <mxCell id="e6" edge="1" parent="1" source="whCentral" target="warehouseTypeDC"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- productLaptop.brand -> brandAsus -->
+        <mxCell id="e7" edge="1" parent="1" source="productLaptop" target="brandAsus"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- productLaptop.category -> catElectronics -->
+        <mxCell id="e8" edge="1" parent="1" source="productLaptop" target="catElectronics"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- productLaptop.subCat -> subCatLaptops -->
+        <mxCell id="e9" edge="1" parent="1" source="productLaptop" target="subCatLaptops"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- catElectronics.subCategories -> subCatLaptops -->
+        <mxCell id="e10" edge="1" parent="1" source="catElectronics" target="subCatLaptops"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- whCentral.products -> productLaptop -->
+        <mxCell id="e11" edge="1" parent="1" source="whCentral" target="productLaptop"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- supplierTech.location -> locationSP -->
+        <mxCell id="e12" edge="1" parent="1" source="supplierTech" target="locationSP"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- supplierTech.products -> productLaptop -->
+        <mxCell id="e13" edge="1" parent="1" source="supplierTech" target="productLaptop"
+                style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
