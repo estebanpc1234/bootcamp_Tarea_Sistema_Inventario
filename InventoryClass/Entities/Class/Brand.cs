@@ -9,7 +9,7 @@ namespace InventoryClass.Entities.Class
 {
     public class Brand: EntityBase
     {
-       
+       public string Description { get; set; }
     }
 
 }
