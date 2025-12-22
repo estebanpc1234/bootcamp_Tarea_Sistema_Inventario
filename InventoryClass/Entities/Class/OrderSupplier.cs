@@ -19,5 +19,7 @@ namespace InventoryClass.Entities.Class
 
         public WareHouse WareHouse { get; set; }
         public bool isFinish {  get; set; }
+
+        public Dictionary<Product, int> Products { get; set; }
     }
 }
